@@ -1,0 +1,151 @@
+body {
+  background-color: #cacaca;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  color: #000000;
+}
+
+h1 {
+  font-size: 20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  box-sizing: border-box;
+  justify-content: space-between;
+  width: 950px;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+.cloud-widget, .cloud-log, .cloud {
+  border: 1px solid #000000;
+  border-radius: 15px;
+}
+
+.cloud-widget, .cloud-log {
+  box-sizing: border-box;
+  width: 48%;
+  padding: 15px;
+  background-color: #ffffff;
+}
+
+.cloud-widget {
+  display: flex;
+  flex-direction: column;
+}
+
+.cloud-widget-header, .cloud-log-header {
+  margin: 0;
+  font: inherit;
+}
+
+.cloud-list, .log-list {
+  margin-top: 20px;
+}
+
+.cloud {
+  padding: 10px;
+  margin-top: 15px;
+}
+
+.cloud:first-child {
+  margin-top: 0;
+}
+
+.id {
+  margin: 0;
+  font: inherit;
+}
+
+.info {
+  display: flex;
+  align-content: center;
+  margin-top: 10px;
+}
+
+.info-header {
+  display: inline-block;
+  width: 70px;
+}
+
+.running-status-button, .stopped-status-button, .stop-button, .play-button, .delete-button {
+  display: inline-block;
+  width: 21px;
+  height: 21px;
+  margin-left: 5px;
+  background-size: cover;
+  background-position: center;
+}
+
+.stop-button, .play-button, .delete-button, .create-button {
+  cursor: pointer;
+}
+
+.stopped-status-button {
+  background-image: url(src/img/bullet_black.png);
+}
+
+.running-status-button {
+  background-image: url(src/img/bullet_green.png);
+}
+
+.status {
+  margin-left: 5px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.stop-button {
+  background-image: url(src/img/pause.png);
+}
+
+.play-button {
+  background-image: url(src/img/play.png);
+}
+
+.delete-button {
+  background-image: url(src/img/delete.png);
+}
+
+.create-button {
+  margin-top: 15px;
+  align-self: center;
+  border: none;
+  background-color: inherit;
+  font: inherit;
+  text-decoration: underline;
+}
+
+.log-list {
+  max-height: 400px;
+  overflow: auto;
+  font-size: 12px;
+}
+
+.log-item {
+  margin-top: 15px;
+}
+
+.log-item:first-child {
+  margin-top: 0;
+}
+
+.log-data {
+  margin-bottom: 5px;
+}
+
+p {
+  margin: 0;
+}
+
+.log-message {
+  text-transform: capitalize;
+}
+
+
+/*# sourceMappingURL=main.css.map*/
